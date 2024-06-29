@@ -1,0 +1,10 @@
+version: '3'
+services:
+  apaini:
+    image: apaini
+    build: .
+    restart: always
+    environment:
+      - TERM=xterm
+    ports:
+      - "10010:11101"
